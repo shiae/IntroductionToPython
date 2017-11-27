@@ -14,7 +14,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 """
 ########################################################################
 #
-# TODO: 1.
+# DONE: 1.
 #  (Yes, that means for YOU to DO things per these instructions:)
 #
 # On Line 13 above, replace  PUT_YOUR_OWN_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
 #   then selector  Mark Directory As --> Sources Root
@@ -57,6 +57,7 @@ window.delay(15)  # Bigger numbers mean slower animation.
 # ----------------------------------------------------------------------
 dave = rg.SimpleTurtle('turtle')
 dave.pen = rg.Pen('pink',20)
+dave.speed = 90
 # ----------------------------------------------------------------------
 # Ask the SimpleTurtle objects to do things:
 # ----------------------------------------------------------------------
@@ -81,7 +82,7 @@ dave.forward(45)
 # ----------------------------------------------------------------------
 matt = rg.SimpleTurtle('turtle')
 matt.pen = rg.Pen('pink', 20)
-matt.speed = 1  # Faster
+matt.speed = 90  # Faster
 matt.right(45)
 matt.backward(200)
 matt.left(150)
@@ -100,7 +101,7 @@ matt.forward(45)
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Add a few more line of your own code above to make one of the
 #   existing Turtles move some more and/or have different
 #   characteristics.
@@ -114,7 +115,7 @@ matt.forward(45)
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   The code above  CONSTRUCTS  two SimpleTurtle objects and gives those objects NAMES:
 #       dave    matt
 #
@@ -132,7 +133,16 @@ matt.forward(45)
 #   As always, test by running the module.
 #
 ########################################################################
-
+this_1_has = rg.SimpleTurtle('turtle')
+# get it?
+this_1_has.pen = rg.Pen('blue', 20)
+this_1_has.paint_bucket = rg.PaintBucket('blue')
+this_1_has.begin_fill()
+this_1_has.speed = 10
+this_1_has.draw_regular_polygon(8, 75)  # octogon
+this_1_has.forward(75)
+this_1_has.left(360 / 8)
+this_1_has.end_fill()
 ########################################################################
 #
 # TODO: 5.
