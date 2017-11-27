@@ -5,7 +5,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          their colleagues and Allison Shi.
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 # On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
@@ -28,3 +28,20 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
 ########################################################################
+
+import rosegraphics as rg
+
+turtle_1 = rg.SimpleTurtle('turtle')
+turtle_1._turtle.goto(-0, -110)
+turtle_1.pen = rg.Pen('midnight blue', 3)
+turtle_1.speed = 10  # Fast
+size = 150
+for k in range(3):
+    turtle_1.draw_circle(size)
+    size = size + 10
+turtle_2 = rg.SimpleTurtle('turtle')
+turtle_2.pen = rg.Pen('blue', 3)
+number_of_sides = 3
+for k in range(10):
+    turtle_2.draw_regular_polygon(number_of_sides, 40)
+    number_of_sides = number_of_sides + 1
