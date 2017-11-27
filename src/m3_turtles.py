@@ -139,7 +139,7 @@ this_1_has.pen = rg.Pen('blue', 20)
 this_1_has.paint_bucket = rg.PaintBucket('blue')
 this_1_has.begin_fill()
 this_1_has.speed = 10
-this_1_has.draw_regular_polygon(8, 75)  # octogon
+this_1_has.draw_regular_polygon(8, 100)  # octogon
 this_1_has.forward(75)
 this_1_has.left(360 / 8)
 this_1_has.end_fill()
