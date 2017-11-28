@@ -32,7 +32,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 import rosegraphics as rg
 
 window = rg.TurtleWindow()
-window.delay(10)
+window.delay(1)
 
 
 turtle_1 = rg.SimpleTurtle('turtle')
@@ -90,7 +90,7 @@ turtle_1.left(90)
 # space
 turtle_1._update_real_turtle()
 turtle_1._turtle.penup()
-turtle_1.forward(50)
+turtle_1.forward(80)
 turtle_1._update_real_turtle()
 turtle_1._turtle.pendown()
 
@@ -110,19 +110,101 @@ turtle_1.left(90)
 turtle_1.forward(30)
 turtle_1._update_real_turtle()
 turtle_1._turtle.penup()
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
-turtle_1.
+turtle_1.forward(10)
+turtle_1.left(90)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+turtle_1.forward(60)
+turtle_1.right(90)
+
+# space
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.forward(40)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+
+# O
+turtle_1.right(90)
+turtle_1.forward(60)
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1.left(90)
+turtle_1.forward(60)
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1.right(180)
+
+# space
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.forward(80)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+
+# W
+turtle_1.right(90)
+turtle_1.forward(60)
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1.right(180)
+turtle_1.forward(30)
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1.left(90)
+turtle_1.forward(60)
+turtle_1.right(90)
+
+# space
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.forward(10)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+
+# O
+turtle_1.right(90)
+turtle_1.forward(60)
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1.left(90)
+turtle_1.forward(60)
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1.right(180)
+
+# space
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.forward(10)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+
+# R
+turtle_1.forward(30)
+turtle_1.right(90)
+turtle_1.forward(30)
+turtle_1.right(90)
+turtle_1.forward(30)
+turtle_1.left(145)
+turtle_1.forward(42)  # 30 * root 2
+turtle_1.right(180)
+turtle_1.forward(42)
+turtle_1.right(45)
+turtle_1.forward(30)
+turtle_1.right(180)
+turtle_1.forward(60)
+
+# next line
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1._turtle.goto(-300, -200)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+
+
 
 # turtle_1.speed = 50  # Fast
 # size = 150
