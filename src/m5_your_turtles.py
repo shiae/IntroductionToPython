@@ -31,17 +31,109 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 import rosegraphics as rg
 
+window = rg.TurtleWindow()
+window.delay(10)
+
+
 turtle_1 = rg.SimpleTurtle('turtle')
-turtle_1._turtle.goto(-0, -110)
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1._turtle.goto(-300, 200)
 turtle_1.pen = rg.Pen('midnight blue', 3)
-turtle_1.speed = 10  # Fast
-size = 150
-for k in range(3):
-    turtle_1.draw_circle(size)
-    size = size + 10
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+
+# H
+turtle_1.right(90)
+turtle_1.forward(60)
+turtle_1.left(180)
+turtle_1.forward(30)
+turtle_1.right(90)
+turtle_1.forward(30)
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1.right(180)
+turtle_1.forward(60)
+turtle_1.left(90)
+
+# space
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.forward(10)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+
+# E
+turtle_1.forward(30)
+turtle_1.left(90)
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.forward(30)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1.right(90)
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.forward(30)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+turtle_1.right(90)
+turtle_1.forward(30)
+turtle_1.left(180)
+turtle_1.forward(30)
+turtle_1.left(90)
+turtle_1.forward(60)
+turtle_1.left(90)
+
+# space
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.forward(50)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+
+# both Ls
+turtle_1.forward(30)
+turtle_1.left(90)
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.forward(60)
+turtle_1.left(90)
+turtle_1.forward(70)
+turtle_1._update_real_turtle()
+turtle_1._turtle.pendown()
+turtle_1.left(90)
+turtle_1.forward(60)
+turtle_1.left(90)
+turtle_1.forward(30)
+turtle_1._update_real_turtle()
+turtle_1._turtle.penup()
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+turtle_1.
+
+# turtle_1.speed = 50  # Fast
+# size = 150
+# for k in range(3):
+# turtle_1.draw_circle(size)
+# size = size + 10
 turtle_2 = rg.SimpleTurtle('turtle')
 turtle_2.pen = rg.Pen('blue', 3)
-number_of_sides = 3
-for k in range(10):
-    turtle_2.draw_regular_polygon(number_of_sides, 40)
-    number_of_sides = number_of_sides + 1
+# number_of_sides = 3
+# for k in range(10):
+#   turtle_1.draw_circle(size)
+#  size = size + 10
+# turtle_2.draw_regular_polygon(number_of_sides, 40)
+#number_of_sides = number_of_sides + 1
