@@ -38,7 +38,7 @@ celeste = rg.SimpleTurtle('turtle')
 celeste.speed = 5
 celeste._update_real_turtle()
 celeste._turtle.penup()
-celeste._turtle.goto(-300, 200)
+celeste._turtle.goto(-240, 200)
 celeste.pen = rg.Pen('midnight blue', 3)
 celeste._update_real_turtle()
 celeste._turtle.pendown()
@@ -252,23 +252,29 @@ celeste._update_real_turtle()
 celeste._turtle.pendown()
 celeste.forward(50)
 
-# next line
-celeste._update_real_turtle()
-celeste._turtle.penup()
-celeste._turtle.goto(-300, -200)
-celeste._update_real_turtle()
-celeste._turtle.pendown()
+# you go, glenn coco
+glenn = rg.SimpleTurtle('turtle')
+glenn.pen = rg.Pen('light green', 3)
+glenn.speed = 50
+glenn._update_real_turtle()
+glenn._turtle.penup()
+glenn._turtle.goto(0, -50)
+glenn._update_real_turtle()
+glenn._turtle.pendown()
+number_of_sides = 3
+for k in range(50):
+    glenn.draw_regular_polygon(number_of_sides, 30)
+    number_of_sides = number_of_sides + 1
+    # glenn._update_real_turtle()
+    # glenn._turtle.penup()
+    glenn.right(30)
+    # glenn.forward(5)
+    # glenn.left(90)
+    glenn._update_real_turtle()
+    glenn._turtle.pendown()
 
-# celeste.speed = 50  # Fast
-# size = 150
-# for k in range(3):
-# celeste.draw_circle(size)
-# size = size + 10
-turtle_2 = rg.SimpleTurtle('turtle')
-turtle_2.pen = rg.Pen('blue', 3)
-# number_of_sides = 3
-# for k in range(10):
-#   celeste.draw_circle(size)
-#  size = size + 10
-# turtle_2.draw_regular_polygon(number_of_sides, 40)
-#number_of_sides = number_of_sides + 1
+for k in range(5):
+    celeste._update_real_turtle()
+    celeste._turtle.penup()
+    celeste._turtle.goto(40, -50)
+    celeste.draw_circle(60)
