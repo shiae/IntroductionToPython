@@ -35,7 +35,7 @@ window = rg.TurtleWindow()
 window.delay(1)
 
 celeste = rg.SimpleTurtle('turtle')
-celeste.speed = 10
+celeste.speed = 5
 celeste._update_real_turtle()
 celeste._turtle.penup()
 celeste._turtle.goto(-300, 200)
@@ -182,7 +182,6 @@ celeste.forward(40)
 celeste._update_real_turtle()
 celeste._turtle.pendown()
 
-celeste.speed = 1
 # R
 celeste.forward(30)
 celeste.right(90)
@@ -205,7 +204,6 @@ celeste._turtle.penup()
 celeste.forward(40)
 celeste._update_real_turtle()
 celeste._turtle.pendown()
-celeste.speed = 1
 
 # L
 celeste.left(90)
@@ -215,7 +213,44 @@ celeste.forward(60)
 celeste.left(90)
 celeste.forward(30)
 
-# d
+# space
+celeste._update_real_turtle()
+celeste._turtle.penup()
+celeste.forward(10)
+celeste._update_real_turtle()
+celeste._turtle.pendown()
+
+# D
+celeste.left(90)
+celeste.forward(60)
+celeste.right(90)
+celeste.forward(10)
+celeste.right(45)
+celeste.forward(14)  # 10 * root 2
+celeste.right(45)
+celeste.forward(40)
+celeste.right(45)
+celeste.forward(14)
+celeste.right(45)
+celeste.forward(10)
+celeste.right(180)
+
+# space
+celeste._update_real_turtle()
+celeste._turtle.penup()
+celeste.forward(40)
+celeste._update_real_turtle()
+celeste._turtle.pendown()
+
+# !
+celeste.left(90)
+celeste.forward(2)
+celeste._update_real_turtle()
+celeste._turtle.penup()
+celeste.forward(8)
+celeste._update_real_turtle()
+celeste._turtle.pendown()
+celeste.forward(50)
 
 # next line
 celeste._update_real_turtle()
